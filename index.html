@@ -17,7 +17,47 @@
             <p class="credit">Photo by <a href="https://unsplash.com/@haliewestphoto">Halie West</a> 
                 on <a href="https://unsplash.com/photos/25xggax4bSA">Unsplash</a></p>
         </div>
-        <div class="form-section"></div>
+
+        <div class="form-section">
+            <div class="description">
+                <p>This is not a real online service! You know you need
+                    something like this in your life to help you realize your
+                    deepest dreams. Sign up <em>now</em> to get started.
+                </p>
+                <p>You <em>know</em> you want to.</p>
+            </div>
+            <div class="form-container">
+                <h2 class="form-title">Let's do this!</h2>
+                <form action="" method="post">
+                    <div class="form-row">
+                        <label for="first-name">FIRST NAME <span aria-label="required">*</span></label>
+                        <input type="text" id="first-name" name="first-name" pattern="^[a-zA-Z ]*$" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="last-name">LAST NAME <span aria-label="required">*</span></label>
+                        <input type="text" id="last-name" name="last-name" pattern="^[a-zA-Z ]*$" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="email">EMAIL <span aria-label="required">*</span></label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="tel">PHONE NUMBER</label>
+                        <input type="tel" id="tel" name="tel">
+                    </div>
+                    <div class="form-row">
+                        <label for="pw">PASSWORD</label>
+                        <input type="password" id="pw" name="password" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="confirm-pw">CONFIRM PASSWORD</label>
+                        <input type="password" id="confirm-pw" name="password" required>
+                    </div>
+                </form>
+            </div>
+            <button type="submit" id="submit-button">Create Account</button>
+            <p class="log-in">Already have an account? <a href="">Log in</a></p>
+        </div>
     </div>
 </body>
 </html>
