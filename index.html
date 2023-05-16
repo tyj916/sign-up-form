@@ -28,7 +28,7 @@
             </div>
             <div class="form-container">
                 <h2 class="form-title">Let's do this!</h2>
-                <form action="" method="post">
+                <form id="sign-up-form" action="" method="post">
                     <div class="form-row">
                         <label for="first-name">FIRST NAME <span aria-label="required">*</span></label>
                         <input type="text" id="first-name" name="first-name" pattern="^[a-zA-Z ]*$" required>
@@ -46,17 +46,19 @@
                         <input type="tel" id="tel" name="tel">
                     </div>
                     <div class="form-row">
-                        <label for="pw">PASSWORD</label>
+                        <label for="pw">PASSWORD <span aria-label="required">*</span></label>
                         <input type="password" id="pw" name="password" required>
                     </div>
                     <div class="form-row">
-                        <label for="confirm-pw">CONFIRM PASSWORD</label>
+                        <label for="confirm-pw">CONFIRM PASSWORD <span aria-label="required">*</span></label>
                         <input type="password" id="confirm-pw" name="password" required>
                     </div>
                 </form>
             </div>
-            <button type="submit" id="submit-button">Create Account</button>
-            <p class="log-in">Already have an account? <a href="">Log in</a></p>
+            <div class="button-container">
+                <input type="submit" id="submit-button" form="sign-up-form" value="Create Account">
+                <p class="log-in">Already have an account? <a href="">Log in</a></p>
+            </div>
         </div>
     </div>
 </body>
