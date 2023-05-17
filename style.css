@@ -73,6 +73,10 @@ body {
     flex-wrap: wrap;
     gap: 30px;
 }
+.form-section .form-row {
+    width: clamp(200px, 100%, 300px);
+    margin-right: 42px;
+}
 .form-section .form-row label {
     display: block;
     font-size: 0.9rem;
@@ -80,12 +84,11 @@ body {
     color: grey;
 }
 .form-section .form-row input {
-    width: min(250px, 100%);
+    width: 100%;
     border: 1px solid #E5E7EB;
     border-radius: 3px;
     padding: 6px 8px;
     margin-top: 8px;
-    margin-right: 80px;
     font-size: 1rem;
     appearance: none;
     outline: none;
