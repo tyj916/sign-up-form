@@ -6,6 +6,41 @@
     font-style: normal;
 }
 
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+    display: flex;
+}
+
+section.left {
+    flex: 1;
+    background-image: url("img/halie-west-25xggax4bSA-unsplash.jpg");
+    background-size: cover;
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.company-detail {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.35);
+    margin-top: 30%;
+}
+
 .title {
     font-family: 'norsebold';
+    font-size: 4rem;
+    line-height: 0;
 }
+
+.credit {
+    text-align: center;
+}
+
+section.right {
+    flex: 2;
+}
+
