@@ -57,7 +57,7 @@ section.right {
 }
 
 section.right > * {
-    padding: 0 50px;
+    padding: 0 48px;
 }
 
 .cta {
@@ -70,12 +70,64 @@ form {
     box-shadow: 2px 4px 6px lightgray;
 }
 
+form ul {
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px 48px;
+}
+
+form ul li {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #444;
+    font-size: 0.8rem;
+}
+
+form input {
+    border: 1px solid #E5E7EB;
+    border-radius: 4px;
+    box-shadow: 1px 1px 3px lightgray;
+    padding: 3px;
+
+    position: relative;
+}
+
+form input:focus {
+    border: 1px solid blue;
+    outline: none;
+}
+
+form input.error:invalid {
+    border: 1px solid red;
+    outline: none;
+}
+
+form input.error:invalid + span::after {
+    content: '* Passwords do not match';
+    color: red;
+}
+
+
 button {
-    padding: 8px 24px;
+    padding: 12px 36px;
     background-color: #596D48;
     color: white;
     border: none;
-    border-radius: 6px;
+    border-radius: 8px;
     box-shadow: 2px 4px 6px lightgray;
     margin-bottom: 10px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #4d5e3e;
+}
+button:active {
+    background-color: #3c4930;
 }
