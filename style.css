@@ -8,8 +8,15 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    height: 100vh;
+    height: max(100vh, 600px);
     display: flex;
+    font-size: 0.9rem;
+}
+
+a {
+    color: #596D48;
+    text-decoration: none;
+    font-weight: bold;
 }
 
 section.left {
@@ -42,5 +49,33 @@ section.left {
 
 section.right {
     flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(249, 250, 251);
+    gap: 30px;
 }
 
+section.right > * {
+    padding: 0 50px;
+}
+
+.cta {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+form {
+    background-color: white;
+    box-shadow: 2px 4px 6px lightgray;
+}
+
+button {
+    padding: 8px 24px;
+    background-color: #596D48;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    box-shadow: 2px 4px 6px lightgray;
+    margin-bottom: 10px;
+}
