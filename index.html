@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="left">
+        <div class="company-detail">
+            <div class="logo"></div>
+            <div class="title">ODIN</div>
+        </div>
+        <div class="credit">Photo by Halie West on Unsplash</div>
+    </section>
+
+    <section class="right">
+        <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up now to get started.</p>
+        <p>You know you want to.</p>
+
+        <form action="" method="post" id="sign-up-form">
+            <h2>Let's do this!</h2>
+
+            <ul>
+                <li>
+                    <label for="fname">First name</label>
+                    <input type="text" id="fname" name="first_name" required>
+                </li>
+
+                <li>
+                    <label for="lname">Last name</label>
+                    <input type="text" id="lname" name="last_name" required>
+                </li>
+
+                <li>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </li>
+
+                <li>
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" >
+                </li>
+
+                <li>
+                    <label for="pwd">Password</label>
+                    <input type="password" id="pwd" name="pwd" required>
+                </li>
+
+                <li>
+                    <label for="confirm-pwd">Confirm Password</label>
+                    <input type="password" id="confirm-pwd" name="password" required>
+                </li>
+            </ul>
+        </form>
+
+        <button type="submit" form="sign-up-form" id="sign-up-button">Create Account</button>
+
+        <p>Already have an account? <a href="">Log in</a></p>
+    </section>
+</body>
+</html>
